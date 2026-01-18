@@ -2,8 +2,6 @@
 
 A wearable sensing tag for pets and a tabletop display that visualizes daily activity and proximity-based companionship.
 
----
-
 ## 1. Overview
 
 ### What it does
@@ -12,8 +10,6 @@ This project consists of a lightweight sensing device attached to a pet’s coll
 ### General system sketch
 ![Overall system sketch](images/Overview.png)
 
-
----
 
 ## 2. Sensing Device (Pet Collar Tag)
 
@@ -37,7 +33,6 @@ The sensing device is a lightweight tag mounted on a pet’s collar that detects
 - **Power management:** MCP1700 low-dropout regulator
 - **Optional proximity aid:** Onboard ESP32 BLE RSSI (no extra sensor required)
 
----
 
 ## 3. Display Device (Bond Meter)
 
@@ -61,7 +56,6 @@ The display device is a tabletop “bond meter” that physically visualizes the
 - **Button:** Standard tact switch
 - **Battery:** 500–1200 mAh LiPo battery
 
----
 
 ## 4. System Communication & Data Flow
 
@@ -71,7 +65,6 @@ The display device is a tabletop “bond meter” that physically visualizes the
 ### Detailed system diagram
 ![Detailed data flow diagram](images/data_flow.png)
 
----
 
 ## Notes on Power and Feasibility
 Both devices are battery-powered and optimized for low-duty-cycle operation. The sensing device minimizes power usage through aggressive sleep scheduling, while the display device uses short stepper motor movements and infrequent updates to maintain reasonable battery life.
