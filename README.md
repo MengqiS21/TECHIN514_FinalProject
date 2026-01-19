@@ -17,7 +17,7 @@ This project consists of a lightweight sensing device attached to a pet’s coll
 The sensing device is a lightweight tag mounted on a pet’s collar that detects motion and estimates proximity to the owner. It classifies activity levels (resting, walking, high activity) and tracks how much time the pet spends near the display device without using GPS.
 
 ### Detailed sensing device sketch
-![Sensing device sketch](images/sensor_device.png)
+![Sensing device sketch](images/Sensor_device.png)
 
 
 ### How it works
@@ -40,7 +40,7 @@ The sensing device is a lightweight tag mounted on a pet’s collar that detects
 The display device is a tabletop “bond meter” that physically visualizes the pet’s daily activity and proximity time using a stepper-motor-driven gauge needle. An LED provides real-time feedback when the pet is nearby, and a button allows users to switch display modes or acknowledge the status.
 
 ### Detailed display device sketch
-![Display device sketch](images/display_device.png)
+![Display device sketch](images/Display_device.png)
 
 ### How it works
 - The display receives summarized activity and proximity data via BLE.
