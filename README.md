@@ -60,10 +60,10 @@ The display device is a tabletop “bond meter” that physically visualizes the
 ## 4. System Communication & Data Flow
 
 ### Wireless communication overview
-![Communication overview diagram](images/comm_overview.png)
+![Communication overview diagram](images/Communication_overview.png)
 
 ### Detailed system diagram
-![Detailed data flow diagram](images/data_flow.png)
+![Detailed data flow diagram](images/Process_diagram.png)
 
 
 ## Notes on Power and Feasibility
