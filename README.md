@@ -1,6 +1,7 @@
 # Pet Activity & Proximity Tracker
 
-A wearable sensing tag for pets and a tabletop display that visualizes daily activity and proximity-based companionship.
+A wearable sensing tag for pets and a tabletop display that visualizes daily activity and proximity-based companionship.  
+The system is designed as a calm, ambient tool that supports reflection rather than real-time alerts, helping pet owners understand patterns of activity and togetherness over the course of a day. By translating sensed data into a physical gauge, the project emphasizes presence and routine over precise tracking or notifications.
 
 ## 1. Overview
 
