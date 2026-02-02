@@ -69,3 +69,7 @@ The display device is a tabletop “bond meter” that physically visualizes the
 
 ## Notes on Power and Feasibility
 Both devices are battery-powered and optimized for low-duty-cycle operation. The sensing device minimizes power usage through aggressive sleep scheduling, while the display device uses short stepper motor movements and infrequent updates to maintain reasonable battery life.
+
+### Schematic and PCB Design
+![Detailed Schematic](images/Schematic.png)
+![Detailed PCB](images/PCB.png)
