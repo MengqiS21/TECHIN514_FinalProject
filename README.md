@@ -73,3 +73,6 @@ Both devices are battery-powered and optimized for low-duty-cycle operation. The
 ### Schematic and PCB Design
 ![Detailed Schematic](images/Schematic.png)
 ![Detailed PCB](images/PCB.png)
+
+### Battery Life Estimation
+https://docs.google.com/spreadsheets/d/1o1SAS0YDETgxqNn3ZR0W69rIJqL8Xmiv9CGHoeJ4H2A/edit?usp=sharing
