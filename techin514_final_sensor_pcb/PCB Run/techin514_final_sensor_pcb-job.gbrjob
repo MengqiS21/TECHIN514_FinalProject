@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "9.0.6"
     },
-    "CreationDate": "2026-01-31T12:13:37-08:00"
+    "CreationDate": "2026-02-10T13:25:08-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "techin514_final_sensor_pcb",
       "GUID": "74656368-696e-4353-9134-5f66696e616c",
-      "Revision": "rev?"
+      "Revision": "v0.1(draft)"
     },
     "Size": {
-      "X": 141.55,
-      "Y": 76.05
+      "X": 0.0,
+      "Y": 0.0
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
