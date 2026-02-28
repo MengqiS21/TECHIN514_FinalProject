@@ -9,7 +9,15 @@ The system is designed as a calm, ambient tool that supports reflection rather t
 This project consists of a lightweight sensing device attached to a pet’s collar and a tabletop display device placed in the home. The system tracks the pet’s activity level and estimates proximity to the owner throughout the day, visualizing overall “bond time” using a physical gauge instead of a screen.
 
 ### General system sketch
-![Overall system sketch](images/Overview.png)
+![Overall system sketch](docs/images/Overview.png)
+
+### Repository structure
+- `firmware/sensor_tag`: PlatformIO firmware for the collar sensing tag
+- `firmware/display_meter`: PlatformIO firmware for the tabletop display
+- `docs/images` and `docs/datasheets`: diagrams and reference datasheets
+- `hardware/pcb`: PCB projects (current + legacy)
+- `hardware/enclosure`: enclosure CAD files
+- `archive/root_pio_legacy`: original root-level PlatformIO prototype project
 
 
 ## 2. Sensing Device (Pet Collar Tag)
@@ -18,7 +26,7 @@ This project consists of a lightweight sensing device attached to a pet’s coll
 The sensing device is a lightweight tag mounted on a pet’s collar that detects motion and estimates proximity to the owner. It classifies activity levels (resting, walking, high activity) and tracks how much time the pet spends near the display device without using GPS.
 
 ### Detailed sensing device sketch
-![Sensing device sketch](images/Sensor_device.png)
+![Sensing device sketch](docs/images/Sensor_device.png)
 
 
 ### How it works
@@ -41,7 +49,7 @@ The sensing device is a lightweight tag mounted on a pet’s collar that detects
 The display device is a tabletop “bond meter” that physically visualizes the pet’s daily activity and proximity time using a stepper-motor-driven gauge needle. An LED provides real-time feedback when the pet is nearby, and a button allows users to switch display modes or acknowledge the status.
 
 ### Detailed display device sketch
-![Display device sketch](images/Display_device.png)
+![Display device sketch](docs/images/Display_device.png)
 
 ### How it works
 - The display receives summarized activity and proximity data via BLE.
@@ -61,18 +69,18 @@ The display device is a tabletop “bond meter” that physically visualizes the
 ## 4. System Communication & Data Flow
 
 ### Wireless communication overview
-![Communication overview diagram](images/Communication_overview.png)
+![Communication overview diagram](docs/images/Communication_overview.png)
 
 ### Detailed system diagram
-![Detailed data flow diagram](images/Process_diagram.png)
+![Detailed data flow diagram](docs/images/Process_diagram.png)
 
 
 ## Notes on Power and Feasibility
 Both devices are battery-powered and optimized for low-duty-cycle operation. The sensing device minimizes power usage through aggressive sleep scheduling, while the display device uses short stepper motor movements and infrequent updates to maintain reasonable battery life.
 
 ### Schematic and PCB Design
-![Detailed Schematic](images/Schematic.png)
-![Detailed PCB](images/PCB.png)
+![Detailed Schematic](docs/images/Schematic.png)
+![Detailed PCB](docs/images/PCB.png)
 
 ### Battery Life Estimation
 https://docs.google.com/spreadsheets/d/1o1SAS0YDETgxqNn3ZR0W69rIJqL8Xmiv9CGHoeJ4H2A/edit?usp=sharing
