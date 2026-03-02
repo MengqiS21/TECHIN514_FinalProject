@@ -500,7 +500,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "/Users/mengqishi/Desktop/TECHIN 514/TECHIN514_FinalProject/techin514_sensor_pcb/PCB_production/",
+      "plot": "../PCB Production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

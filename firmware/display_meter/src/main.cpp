@@ -121,6 +121,7 @@ bool connectToSensor() {
     return false;
   }
   delete target;
+  delay(500);  // Allow GATT attribute discovery to complete
 
   BLERemoteService* service = g_client->getService(BLEUUID(BLE_SERVICE_UUID));
   if (service == nullptr) {
@@ -138,6 +139,14 @@ bool connectToSensor() {
 
   if (!g_remote_char->canNotify()) {
     Serial.println("BLE characteristic does not support notify.");
+    g_client->disconnect();
+    return false;
+  }
+
+  BLERemoteDescriptor* cccd =
+      g_remote_char->getDescriptor(BLEUUID((uint16_t)0x2902));
+  if (cccd == nullptr) {
+    Serial.println("BLE CCCD descriptor not found on peer.");
     g_client->disconnect();
     return false;
   }

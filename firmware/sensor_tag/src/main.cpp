@@ -125,7 +125,7 @@ void sendBlePayload() {
     payload.battery_mv = g_battery_mv;
 
     LOG_STAGE("BLE_SEND");
-    ch->setValue(reinterpret_cast<const uint8_t*>(&payload), sizeof(payload));
+    ch->setValue(reinterpret_cast<uint8_t*>(&payload), sizeof(payload));
     ch->notify();
     delay(kBlePostNotifyDelayMs);
   } else {
