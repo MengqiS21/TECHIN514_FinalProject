@@ -1,15 +1,15 @@
 #include <Arduino.h>
 
 // ---- XIAO ESP32-C3 Pin Mapping ----
-#define LL D0   // 左下 (GPIO2)
-#define UL D1   // 左上 (GPIO3)
-#define UR D2   // 右上 (GPIO4)
-#define LR D3   // 右下 (GPIO5)
+#define LL D0   // (GPIO2)
+#define UL D1   // (GPIO3)
+#define UR D2   // (GPIO4)
+#define LR D3   // (GPIO5)
 
-#define LED_PIN D7    // LED 连接在 D7
-#define SWITCH_PIN D5 // 三脚开关连接在 D5
+#define LED_PIN D7    // LED
+#define SWITCH_PIN D5
 
-// 4-step sequence (双相驱动)
+// 4-step sequence
 const uint8_t seq[4][4] = {
   {1, 0, 1, 0},
   {0, 1, 1, 0},
@@ -19,7 +19,7 @@ const uint8_t seq[4][4] = {
 
 int stepIndex = 0;
 
-// 调速度：3000微秒 (3ms)
+// 3ms
 const unsigned long STEP_INTERVAL_US = 3000;
 unsigned long lastStepUs = 0;
 
@@ -59,10 +59,7 @@ void setup() {
 }
 
 void loop() {
-  // ---- 三脚开关逻辑：直接读取物理状态 ----
-  // 当开关拨向 GND 那一侧时，digitalRead 为 LOW
   if (digitalRead(SWITCH_PIN) == LOW) {
-    // 运行状态
     digitalWrite(LED_PIN, HIGH);
 
     unsigned long now = micros();
@@ -71,7 +68,6 @@ void loop() {
       stepForwardOnce();
     }
   } else {
-    // 停止状态
     digitalWrite(LED_PIN, LOW);
     motorOff();
   }
