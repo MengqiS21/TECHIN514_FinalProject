@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/XIAO_Series_SCH_Symbols/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "C3_MotionDriver_Symbols")(type "KiCad")(uri "${KIPRJMOD}/C3_MotionDriver_Symbols/C3_MotionDriver_Symbols.kicad_sym")(options "")(descr ""))
+)
