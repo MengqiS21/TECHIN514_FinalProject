@@ -1,19 +1,17 @@
 #ifndef DISPLAY_PINS_H
 #define DISPLAY_PINS_H
 
-// TODO: Set to your real motor driver IN1 pin.
-static constexpr int PIN_MOTOR_IN1 = -1;
+// X27.168 motor wiring (current connection):
+// left-top -> D1, left-bottom -> D0, right-top -> D2, right-bottom -> D3
+static constexpr int PIN_MOTOR_IN1 = D1;
 
-// TODO: Set to your real motor driver IN2 pin.
-static constexpr int PIN_MOTOR_IN2 = -1;
+static constexpr int PIN_MOTOR_IN2 = D0;
 
-// TODO: Set to your real motor driver IN3 pin.
-static constexpr int PIN_MOTOR_IN3 = -1;
+static constexpr int PIN_MOTOR_IN3 = D2;
 
-// TODO: Set to your real motor driver IN4 pin.
-static constexpr int PIN_MOTOR_IN4 = -1;
+static constexpr int PIN_MOTOR_IN4 = D3;
 
-// TODO: Optional status LED pin. Keep -1 if unused.
+// Optional status LED pin. Keep -1 if unused.
 static constexpr int PIN_STATUS_LED = -1;
 
 #endif
